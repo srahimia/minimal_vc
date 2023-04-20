@@ -75,8 +75,7 @@ def finished(hypergraph_dict):
 
 # --------------------------------------------------------------------------------------------------------- #
 # read the data and convert it to a symmetric matrix:
-df = pd.read_table('/Users/Sara/Documents/CSE282/Project/binarized_genetic_interaction_data_threshold_0.05.txt',
-                   "\t", header = None)
+df = pd.read_table('./binarized_genetic_interaction_data_threshold_0.05.txt', "\t", header = None)
 df_array = df.values
 
 # make the matrix symmetric:
